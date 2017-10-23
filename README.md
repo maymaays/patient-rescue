@@ -14,6 +14,8 @@
 
 ### RULE <br />
 
+*- user must inputs the lowercase only -<br/>*
+
 #### Rule 1: start_diagnosis. <br /> 
  ```
 This rule is used to diagnose the disease from symptoms that our system ask from users. 
@@ -58,7 +60,8 @@ This rule is used to suggest the vehicle from disease that user has. B represent
 
 #### Rule 4: suggest_hospital(W,X,P). <br /> 
  ```
-This rule is used to suggest the hospital from disease and location of user. W, X, and P are represent patient's name, disease, and hospital's name respectively. 
+This rule is used to suggest the hospital from disease and location of user. 
+W, X, and P are represent patient's name, disease, and hospital's name respectively. 
  ```
 
 

@@ -62,7 +62,7 @@ This rule is used to suggest the vehicle from disease that user has. B represent
 
 - This picture shows an example of output when a user inputs disease and system don't seem to be able suggest your vehicle.
 
-#### Rule 4: suggest_hospital(W,X,P). <br /> 
+#### Rule 4: suggest_hospital(Patient). <br /> 
  ```
 This rule is used to suggest the hospital from patient name. 
  ```

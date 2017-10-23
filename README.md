@@ -64,17 +64,16 @@ This rule is used to suggest the vehicle from disease that user has. B represent
 
 #### Rule 4: suggest_hospital(W,X,P). <br /> 
  ```
-This rule is used to suggest the hospital from disease and location of user. 
-W, X, and P are represent patient's name, disease, and hospital's name respectively. 
+This rule is used to suggest the hospital from patient name. 
  ```
+<img width="318" alt="screen shot 2560-10-23 at 6 34 47 pm" src="https://user-images.githubusercontent.com/17776844/31887119-553b8f18-b821-11e7-80ce-f3039bfa9b8a.png">
+
+- This picture shows an example of output when a user inputs his/her name and system able to suggesthospital.
+
+<img width="413" alt="screen shot 2560-10-23 at 6 35 11 pm" src="https://user-images.githubusercontent.com/17776844/31887120-5642dfec-b821-11e7-874f-b846ac66b253.png">
 
 
-- This picture shows an example of output when a user inputs disease and system able to suggest your hospital.
-
-
-
-
-- This picture shows an example of output when a user inputs disease and system don't seem to be able suggest your hospital.
+- This picture shows an example of output when a user inputs his/her name and system don't seem to be able suggest hospital.
 
 
 

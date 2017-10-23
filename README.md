@@ -30,7 +30,7 @@ This rule is used to diagnose the disease from symptoms that our system ask from
 
 <img width="425" alt="screen shot 2560-10-23 at 4 29 05 pm" src="https://user-images.githubusercontent.com/17776844/31882860-53a79e3a-b812-11e7-9234-15881e5617a9.png">
 
-- This picture shows an example of output when a user inputs symptom and system doesn't seem to be able diagnose your disease.
+- This picture shows an example of output when a user inputs symptom and system doesn't seem to be able to diagnose your disease.
 
 <img width="369" alt="screen shot 2560-10-23 at 6 02 49 pm" src="https://user-images.githubusercontent.com/17776844/31885936-7470c04c-b81c-11e7-899a-ba44e564e2e0.png">
 
@@ -47,7 +47,7 @@ This rule is used to diagnose the disease from symptoms that our system ask from
 
 <img width="308" alt="screen shot 2560-10-23 at 4 26 18 pm" src="https://user-images.githubusercontent.com/17776844/31882873-5c0dc84c-b812-11e7-8bc2-5e9dcc4bddfa.png">
 
-- This picture shows an example of output when a user inputs symptom and system doesn't seem to be able suggest your vehicle.
+- This picture shows an example of output when a user inputs symptom and system doesn't seem to be able to suggest your vehicle.
 
 #### Rule 3: suggest_vehicle_by_disease(X).<br /> 
  ```
@@ -60,7 +60,7 @@ This rule is used to suggest the vehicle from disease that user has. B represent
 
 <img width="397" alt="screen shot 2560-10-23 at 4 27 16 pm" src="https://user-images.githubusercontent.com/17776844/31882867-5844eb3c-b812-11e7-9273-0210f5c80c83.png">
 
-- This picture shows an example of output when a user inputs disease and system doesn't seem to be able suggest your vehicle.
+- This picture shows an example of output when a user inputs disease and system doesn't seem to be able to suggest your vehicle.
 
 #### Rule 4: suggest_hospital(Patient). <br /> 
  ```
@@ -73,7 +73,7 @@ This rule is used to suggest the hospital from patient name.
 <img width="413" alt="screen shot 2560-10-23 at 6 35 11 pm" src="https://user-images.githubusercontent.com/17776844/31887120-5642dfec-b821-11e7-874f-b846ac66b253.png">
 
 
-- This picture shows an example of output when a user inputs his/her name and system doesn't seem to be able suggest hospital.
+- This picture shows an example of output when a user inputs his/her name and system doesn't seem to be able to suggest hospital.
 
 
 

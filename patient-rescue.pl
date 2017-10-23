@@ -339,7 +339,7 @@ response(Reply) :-
 start_diagnosis :-
     write('What is the patient''s name? '),nl,
     read(Patient),
-    write_list(['Hello! ', Patient, ' ♡']),nl,
+    write_list(['Hello! ', Patient, '!']),nl,
     hypothesis(Patient,Disease),
     write_list([Patient,' probably has ',Disease, '.']),nl.
 

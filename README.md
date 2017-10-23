@@ -14,6 +14,8 @@
 
 ### RULE <br />
 
+*- user must inputs the lowercase only -<br/>*
+
 #### Rule 1: start_diagnosis. <br /> 
  ```
 This rule is used to diagnose the disease from symptoms that our system ask from users. 

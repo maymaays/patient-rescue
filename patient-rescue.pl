@@ -88,6 +88,8 @@ symptom(Patient,chills) :-
         response(Reply),
         Reply='y'.
 
+
+
 hypothesis(Patient,heart_disease) :-
     symptom(Patient,chest_pain),
     symptom(Patient,short_breathing),
@@ -129,6 +131,93 @@ hypothesis(Patient,heart_disease) :-
     symptom(Patient,nausea),
     symptom(Patient,chest_pressure),
     symptom(Patient,rash).
+
+hypothesis(Patient,kidney_disease) :-
+    symptom(Patient,pee_more_than_normal),
+    symptom(Patient,puffiness_around_the_eyes).
+
+hypothesis(Patient,dengue_fever) :-
+    symptom(Patient,fatigue),
+    symptom(Patient,nausea),
+    symptom(Patient,pain_behind_the_eyes).
+
+hypothesis(Patient,dengue_fever) :-
+    symptom(Patient,fever),
+    symptom(Patient,headache),
+    symptom(Patient,muscle_pain).
+
+hypothesis(Patient,dengue_fever) :-
+    symptom(Patient,fatigue),
+    symptom(Patient,fever),
+    symptom(Patient,headache),
+    symptom(Patient,muscle_pain).
+
+hypothesis(Patient,dengue_fever) :-
+    symptom(Patient,fever),
+    symptom(Patient,headache),
+    symptom(Patient,pain_behind_the_eyes).
+
+hypothesis(Patient,dengue_fever) :-
+    symptom(Patient,fever),
+    symptom(Patient,headache).
+
+hypothesis(Patient,dengue_fever) :-
+    symptom(Patient,fatigue),
+    symptom(Patient,fever).
+
+hypothesis(Patient,kidney_disease) :-
+    symptom(Patient,pee_less_than_normal),
+    symptom(Patient,puffiness_around_the_eyes).
+
+
+hypothesis(Patient,heart_disease) :-
+    symptom(Patient,chest_pain),
+    symptom(Patient,short_breathing).
+
+hypothesis(Patient,heart_disease) :-
+    symptom(Patient,nausea),
+    symptom(Patient,chest_pressure),
+    symptom(Patient,rash).
+
+hypothesis(Patient,heart_disease) :-
+    symptom(Patient,short_breathing),
+    symptom(Patient,chest_pain),
+    symptom(Patient,rash).
+
+hypothesis(Patient,leptospirosis) :-
+    symptom(Patient,coughing_blood),
+    symptom(Patient,chest_pain).
+
+hypothesis(Patient,leptospirosis) :-
+    symptom(Patient,muscle_pain),
+    symptom(Patient,swollen_ankles),
+    symptom(Patient,headache).
+
+
+hypothesis(Patient,leptospirosis) :-
+    symptom(Patient,chest_pain).
+    symptom(Patient,muscle_pain),
+    symptom(Patient,headache).
+
+
+hypothesis(Patient,tuberculosis) :-
+    symptom(Patient,coughing_blood),
+    symptom(Patient,chest_pain).
+
+hypothesis(Patient,tuberculosis) :-
+    symptom(Patient,fever),
+    symptom(Patient,fatigue),
+    symptom(Patient,chills).
+
+hypothesis(Patient,tuberculosis) :-
+    symptom(Patient,unintentional_weight_loss),
+    symptom(Patient,fever).
+
+hypothesis(Patient,tuberculosis) :-
+    symptom(Patient,fever),
+    symptom(Patient,fatigue),
+    symptom(Patient,chills).
+
 
 write_list([]).
 
@@ -307,7 +396,8 @@ response(Reply) :-
     doctor_response_in(nawamintra_kitsanun, bangkok).
     doctor_response_in(nipon_limsomwong, bangkok).
     doctor_response_in(kris_chirasanta, siriraj).
-    doctor_response_in(ruenroeng_leelanukrom,  siriraj).
+    doctor_response_in(ruenroeng_leelanukrom,ramkhamhaeng).
+
 
     vehicle(helicopter).
     vehicle(advance_ambulance).
@@ -330,7 +420,7 @@ response(Reply) :-
 
     patient_at(somchai, bangkok).
     patient_at(fongchan, chiangmai).
-    patient_at(manmuang, nan).
+    patient_at(manmuang, bangkok).
 
     patient_record(somchai, tuberculosis).
     patient_record(fongchan, heart_disease).
@@ -373,15 +463,17 @@ suggest_vehicle_by_disease(X):-
     vehicle(A),
     write_list(['Vehicle for ', Patient, ' is ', A, '.']).
 
-suggest_hospital(W,X,P):-
-    write('Suggest hospital by inputing your disease & location!'),nl,
-    disease(X),
-    doctor(A, X),
-    doctor_response_in(A, B),
-    hospital(B, P),
-    hospital_disease_equipment(B, X),
-    patient(W),
-    patient_at(W, P).
+suggest_hospital(Patient):-
+    write('Suggest hospital by inputting your name!'),nl,
+    patient(Patient),
+    patient_record(Patient,Disease),
+    disease(Disease),
+    patient_at(Patient, Province),
+    location(Province),
+    hospital(Hospital, Province),
+    hospital_disease_equipment(Hospital,Disease),
+    doctor_response_in(Doctor,Hospital),
+    write_list(['Hospital for ', Patient, ' is ', Hospital, '.']).
 
 suggest_vehicle_by_disease(X) :-
     write('Sorry, I don''t seem to be able to suggest your vehicle.'),nl.
@@ -389,5 +481,5 @@ suggest_vehicle_by_disease(X) :-
 suggest_vehicle_by_symptom(X) :-
     write('Sorry, I don''t seem to be able to suggest your vehicle.'),nl.
 
-suggest_hospital(W,X,P) :-
+suggest_hospital(Patient) :-
         write('Sorry, I don''t seem to be able to suggest your hospital.'),nl.

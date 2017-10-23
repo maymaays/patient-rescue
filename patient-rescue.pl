@@ -123,14 +123,22 @@ hypothesis(Patient,tuberculosis) :-
     symptom(Patient,fatigue),
     symptom(Patient,chills).
 
+hypothesis(Patient,heart_disease) :-
+    symptom(Patient,chest_pain),
+    symptom(Patient,short_breathing),
+    symptom(Patient,nausea),
+    symptom(Patient,chest_pressure),
+    symptom(Patient,rash).
+
 write_list([]).
+
 write_list([Term| Terms]) :-
     write(Term),
     write_list(Terms).
 
 response(Reply) :-
     get_single_char(Code),
-    put_code(Code), nl,
+    put_code(Code),nl,
     char_code(Reply, Code).
 
     disease(heart_disease).
@@ -339,7 +347,7 @@ response(Reply) :-
 start_diagnosis :-
     write('What is the patient''s name? '),nl,
     read(Patient),
-    write_list(['Hello! ', Patient, '!']),nl,
+    write_list(['Hello! ', Patient]),nl,
     hypothesis(Patient,Disease),
     write_list([Patient,' probably has ',Disease, '.']),nl.
 

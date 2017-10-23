@@ -31,6 +31,10 @@ This rule is used to diagnose the disease from symptoms that our system ask from
 <img width="425" alt="screen shot 2560-10-23 at 4 29 05 pm" src="https://user-images.githubusercontent.com/17776844/31882860-53a79e3a-b812-11e7-9234-15881e5617a9.png">
 
 - This picture shows an example of output when a user inputs symptom and system don't seem to be able diagnose your disease.
+
+<img width="369" alt="screen shot 2560-10-23 at 6 02 49 pm" src="https://user-images.githubusercontent.com/17776844/31885936-7470c04c-b81c-11e7-899a-ba44e564e2e0.png">
+
+- This picture shows other an example of output when a user inputs symptom.
  
 #### Rule 2: suggest_vehicle_by_symptom(B). <br /> 
  ```

@@ -1,15 +1,17 @@
 # patient-rescue
 
 ## Members 
-* Methawee Apinainarong 5810546714 <br />
-* Palita Samringpol 5810545441 <br />
-* Jere Laitervo 6010041465 <br />
-* Ruben Perez 6010041015 <br />
-* Warisara Inprom 5810545467 <br />
-* Soraya Saenna 5810546056 <br />
+
 * Parinvut Rochanavedya 5710546305 <br />
 * Napat Thongpao 5710547191 <br />
 * Warat Narattharaksa 5710547221 <br />
+* Palita Samringpol 5810545441 <br />
+* Methawee Apinainarong 5810546714 <br />
+* Warisara Inprom 5810545467 <br />
+* Soraya Saenna 5810546056 <br />
+* Ruben Perez 6010041015 <br />
+* Jere Laitervo 6010041465 <br />
+
 
 
 ### RULE <br />

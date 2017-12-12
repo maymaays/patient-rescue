@@ -418,6 +418,12 @@ response(Reply) :-
     patient(fongchan).
     patient(manmuang).
 
+    patient_id(1100501456478).
+    patient_id(1100469112324).
+
+    patient_name(11005001456478, somchai).
+    patient_name(1100469112324, fongchan).
+
     patient_at(somchai, bangkok).
     patient_at(fongchan, chiangmai).
     patient_at(manmuang, bangkok).
